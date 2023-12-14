@@ -17,5 +17,4 @@ class Solution:
             if cord[1]==mid-1:
                 return util(l, cord[1])
             return util(cord[1], r)
-            
         return util(0, nc-1)
