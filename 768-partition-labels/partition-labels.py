@@ -7,6 +7,7 @@ class Solution:
         ans=[]      
         t=set()
         tot=-1
+        
         for i in range(len(s)):
             t.add(s[i])
             if i==end[s[i]]:
