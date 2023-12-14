@@ -9,8 +9,7 @@ class Solution:
             
         for i in range(len(grid)):
             for j in range(i+1, len(grid)):
-                grid[i][j],grid[j][i]=grid[j][i],grid[i][j]
-                
+                grid[i][j],grid[j][i]=grid[j][i],grid[i][j]       
         ans=0
         for i in grid:
             t=tuple(i)
