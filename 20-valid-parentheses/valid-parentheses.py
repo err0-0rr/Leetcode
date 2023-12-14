@@ -1,29 +1,20 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         ls=[]
+        dic={
+            '}':'{',
+            ']':'[',
+            ')':'('
+        }
         for i in s:
-            match i:
-                case '(' :
-                    ls.append(i)
-                case '[' :
-                    ls.append(i)
-                case '{' :
-                    ls.append(i)
-                case ')':
-                    if not ls or  ls[-1]!='(':
-                        return False
-                    else:
-                        ls.pop()
-                case ']':
-                    if not ls or ls[-1]!='[':
-                        return False
-                    else:
-                        ls.pop()
-                case '}':
-                    if not ls or ls[-1]!='{':
-                        return False
-                    else:
-                        ls.pop()
+            if i not in dic:
+                ls.append(i)
+            else:
+                if ls and ls[-1]==dic[i]:
+                    ls.pop()
+                else:
+                    return False
+
         if not ls:
             return True
         else:
