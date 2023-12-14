@@ -22,7 +22,6 @@ class Solution:
                 continue
             if a.val not in m:
                 m[a.val]=Node(a.val)
-            
             if a.val not in done:
                 for i in a.neighbors:
                     if i.val not in m:
