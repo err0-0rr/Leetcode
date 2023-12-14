@@ -1,6 +1,7 @@
 class Solution:
     def maxCoins(self, piles: List[int]) -> int:
         piles.sort()
+        
         n=len(piles)-2
         c=n//3
         ans=0
