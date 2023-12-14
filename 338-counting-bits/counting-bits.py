@@ -10,7 +10,6 @@ class Solution:
                     t+=ans[x]
                     break
             return t
-            
         for i in range(n+1):
             ans[i]=util(i)
         return ans
