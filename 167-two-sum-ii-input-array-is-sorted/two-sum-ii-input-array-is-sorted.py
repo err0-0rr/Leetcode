@@ -5,10 +5,10 @@ class Solution:
         while l<r:
             temp=numbers[l]+numbers[r]
             if temp==target:
-                return [l+1, r+1]
+                return (l+1, r+1)
             if temp>target:
                 r-=1
             else:
                 l+=1
-        return []
+        return ()
         
