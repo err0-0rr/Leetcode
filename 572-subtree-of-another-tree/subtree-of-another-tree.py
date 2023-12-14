@@ -13,7 +13,6 @@ class Solution:
         if self.sameTree(root, subRoot):
             return True
         return self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
-        
     def sameTree(self, r, s):
         if not r and not s:
             return True
