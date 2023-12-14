@@ -8,4 +8,5 @@ class Solution:
             ans+=piles[n]
             n-=2
             c-=1
+            
         return ans
