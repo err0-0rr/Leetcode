@@ -11,6 +11,5 @@ class Solution:
             next1=prt.next
             prt.next=temp
             temp=prt
-            prt=next1
-            
+            prt=next1    
         return temp
