@@ -6,6 +6,7 @@ class Solution:
         for i in range(k, len(nums)):
             heapq.heappush(h, nums[i])
             heapq.heappop(h)
+            
         return heapq.heappop(h)
         
         
