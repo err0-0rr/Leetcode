@@ -9,4 +9,5 @@ class Solution:
             ls=[mini*i, maxi*i, i]
             mini,maxi=min(ls), max(ls)
             ans=max(ans, maxi)
+            
         return ans
