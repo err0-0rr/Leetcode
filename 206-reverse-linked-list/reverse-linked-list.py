@@ -12,4 +12,5 @@ class Solution:
             prt.next=temp
             temp=prt
             prt=next1
+            
         return temp
