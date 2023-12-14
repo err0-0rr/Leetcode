@@ -6,6 +6,7 @@ class Solution:
             for i in coins:
                 if idx-i>=0:
                     dp[idx]=min(dp[idx], dp[idx-i]+1)
+                    
         if dp[amount]==float("inf"):
             return -1
         return dp[amount]
