@@ -6,9 +6,8 @@ class Solution:
                 dic[i]=1
             else:
                 dic[i]+=1
-        def fun(x):
-            return x[1]
-        ls=sorted(dic.items(), key=fun, reverse=True)
+
+        ls=sorted(dic.items(), key=lambda x:x[1], reverse=True)
         ls=ls[:k]
         for i in range(k):
             ls[i]=ls[i][0]
