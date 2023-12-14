@@ -12,7 +12,6 @@ class Solution:
             c+=1
         t1=t.next
         t.next=list2
-        
         t2=list2
         while t2.next:
             t2=t2.next
