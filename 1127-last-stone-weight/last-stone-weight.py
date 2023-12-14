@@ -6,6 +6,7 @@ class Solution:
             temp=heapq.heappop(h)-heapq.heappop(h)
             if temp<0:
                 heapq.heappush(h, temp)
+                
         if h:
             return -1*h[0]
         return 0
