@@ -10,4 +10,5 @@ class Solution:
                 nums1[idx]=nums1[i]
                 i-=1
             idx-=1
+        return
             
