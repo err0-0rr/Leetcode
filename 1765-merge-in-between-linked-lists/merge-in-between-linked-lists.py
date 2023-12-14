@@ -13,6 +13,7 @@ class Solution:
         t1=t.next
         t.next=list2
         t2=list2
+        
         while t2.next:
             t2=t2.next
         while c!=b:
