@@ -10,7 +10,6 @@ def tot(r):
         return 0
     return 1+tot(r.left)+tot(r.right)
     
-
 class Solution:
     def btreeGameWinningMove(self, root:TreeNode, n: int, x: int) -> bool:
         def util(r):
