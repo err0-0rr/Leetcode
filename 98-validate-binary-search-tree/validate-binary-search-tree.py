@@ -8,6 +8,7 @@ class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         s=float("-inf")
         ans=True
+        #inorder traversal
         def util(r):
             nonlocal s
             if r.left:
