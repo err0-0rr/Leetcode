@@ -4,7 +4,6 @@ class Solution:
         l=r=0
         dic={}
         while r<len(nums):
-            #print(r)
             if nums[r] in dic:
                 if dic[nums[r]]<k:
                     dic[nums[r]]+=1
@@ -21,7 +20,5 @@ class Solution:
             else:
                 dic[nums[r]]=1
                 r+=1
-                ans=max(ans, r-l)
-                
-                
+                ans=max(ans, r-l) 
         return ans
