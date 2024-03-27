@@ -2,7 +2,6 @@ class Solution:
     def minProcessingTime(self, processorTime: List[int], tasks: List[int]) -> int:
         processorTime.sort()
         tasks.sort(reverse=True)
-        
         ans=0
         temp=0
         for i in processorTime:
